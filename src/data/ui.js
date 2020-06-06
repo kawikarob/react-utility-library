@@ -254,7 +254,7 @@ export const uiData = [
       order: 205,
    },
    {
-      name: "typeofVar",
+      name: "checkType",
       desc: "To check the data structure, or type, of a variable",
       inputs: 1,
       type: "intermediate",
