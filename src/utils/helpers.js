@@ -10,6 +10,7 @@ const safelyParseJSON = (str) => {
 };
 
 const isObject = (value) => {
+   // boolean
    return (
       typeof value === "object" &&
       value !== null &&
@@ -22,7 +23,6 @@ const convertDataType = (str) => {
    if (str === "undefined") return undefined;
    if (str === "true") return true;
    if (str === "false") return false;
-
    // below note allows str == Number(str)
    // eslint-disable-next-line
    if (str == Number(str)) return Number(str);

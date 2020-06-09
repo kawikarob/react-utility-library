@@ -25,12 +25,13 @@ export default class App extends React.Component {
       // isFavortieChecked datatype = boolean
       const isFavoritesChecked = document.getElementById("viewMode-favorites") // id of element to locate
          .checked; // favorites is checked
-      console.log(isFavoritesChecked);
+      // console.log(isFavoritesChecked);
 
       const searchInput = document
          .getElementById("search-input")
          .value.toLowerCase();
       const allFuncs = [...this.state.allFuncs]; // gets the copy allFuncs array
+      // console.log(searchInput); // the users input
 
       if (isFavoritesChecked) {
          this.setState({ isFavoritesChecked: true }); // isFavoritesChecked is label(key) for obj not variable
@@ -45,7 +46,7 @@ export default class App extends React.Component {
          });
          const orderArr = JSON.parse(this.state.orderBy);
          // JSON.parse converts JSON "string" array w/, into array
-         console.log("orderArr: ", orderArr);
+         // console.log("orderArr: ", orderArr);
          const orderedFuncs = orderBy(filteredFuncs, ...orderArr); // 2 separate string outside of array
          this.setState({ displayedFuncs: orderedFuncs }); // displays all the filtered fuctions
       } else {
