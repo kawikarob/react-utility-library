@@ -11,7 +11,7 @@ export default class utils {
       // A1: a number
       // A2 : a number
       // R : a number
-      return secondNumber - firstNumber;
+      return firstNumber - secondNumber;
    }
 
    static multiply(firstNumber, secondNumber) {

@@ -10,7 +10,7 @@ export const uiData = [
    },
    {
       name: "subtract",
-      desc: "Subtract first number from the second number",
+      desc: "Subtract one number from another",
       inputs: 2,
       type: "basic",
       typeNum: 100,
